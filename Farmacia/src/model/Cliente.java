@@ -1,10 +1,20 @@
+package model;
 
 public class Cliente extends Pessoa{
 int[] historicoPedidos;
+int id;
 
-	public Cliente(String nome, int cpf, String telefone, String endereco, int[] historicoPedidos) {
+	public Cliente(String nome, String cpf, String telefone, String endereco, int[] historicoPedidos) {
 		super(nome, cpf, endereco, telefone);
 		this.historicoPedidos = historicoPedidos;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int[] getHistoricoPedidos() {

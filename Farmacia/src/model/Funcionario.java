@@ -1,13 +1,12 @@
-
+package model;
 
 public class Funcionario extends Pessoa  {
 	
 	public double salariobase;
 	public String[] vendas;
-
 	public int idf;
 
-	public Funcionario(String nome, int cpf, String endereco, String telefone, double salarioBase, String[] vendas,int idf){
+	public Funcionario(String nome, String cpf, String endereco, String telefone, double salarioBase, String[] vendas,int idf){
 		super(nome, cpf, endereco, telefone);
 		this.salariobase = salarioBase;
 		this.vendas = vendas;
@@ -37,6 +36,11 @@ public class Funcionario extends Pessoa  {
 	public void setIdf(int idf) {
 		this.idf = idf;
 	}
+	public double computaSalario() {
+		return getSalariobase();
+	}
+	
+	
 	
 }
 //public String toString(){

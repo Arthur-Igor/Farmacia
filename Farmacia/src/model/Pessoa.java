@@ -1,15 +1,16 @@
+package model;
 public class Pessoa {
 
 	private String nome;
-	private int cpf;
+	private String cpf;
 	private String endereco;
 	private String telefone;
 	
-	public Pessoa(String nome, int cpf, String endereco, String telefone){
+	public Pessoa(String nome, String cpf2, String endereco, String telefone){
 		this.endereco = endereco;
 		this.telefone = telefone;
 		this.nome = nome;
-		this.cpf = cpf;
+		this.cpf = cpf2;
 	}
 	
 	public String getEndereco() {
@@ -31,10 +32,10 @@ public class Pessoa {
 	public void setNome(String nome){
 		this.nome = nome;
 	}
-	public int getCpf(){
+	public String getCpf(){
 	return cpf;
 	}
-	public void setCpf(int cpf){
+	public void setCpf(String cpf){
 	this.cpf = cpf;
 	}
 	@Override
